@@ -2,21 +2,45 @@
 <html>
 <head>
   <title>Growing Up As A Child</title>
-  <link rel="stylesheet" href="style.css">
+
 </head>
-  <!-- the external stylesheet reference should be inserted in the <head> section, as should any in-page/internal style information (those declarations found in the <style> element) link rel="stylesheet" href="/examples/css/style.css" -->
-  <!-- you should not have 2 title elements and title elements need to be -- as your first 1 is -- in the <head> section <title>Embedding Style Sheets</title -->
-  <!-- you should include all of this style information in your external stylesheet. I will create a separate file & reference and copy that information to the separate file, so that you can see how it all links together. -->
- <!-- you need a <body> opener tag, immediately after the closing </head> tag that indicates that the "metadata" section of the file has ended and the content section of the file is beginning. -->
-  <body>
-    <!-- footer usually goes at the bottom of the html page, but this code will validate, so it is ok. -->
-    <!-- you included a good example of class style usage -->
-    <!-- good use of classes and id for the button click javascript. I've added in a style for the #myHeader so you can see the syntax of an id-based style section -->
-    <footer>
+  <link rel="stylesheet" href="/examples/css/style.css">
+  <title>Embedding Style Sheets</title>
+      <style>
+      p.a {
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    p.b {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+              a { color: #b7ff00; }
+          body { background-color: blue; }
+          h1 { color: #b7ff00; }
+          p { color: #b7ff00; }
+          img {
+            margin-left: auto;
+            margin-right: auto;
+            border: 7px soild yellow;
+          }
+          h1,h2,h3,h4,h5,h6 {font-family: cursive; }
+      .steps {
+            background-color: green;
+            color: white;
+            margin: 20px;
+            padding: 20px;
+      }
+      img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+          </style>
+      <footer>
     <p>Posted by: Wali Ibrahim</p>
     <p>Contact information: <a href="mailto:wali@my.ccsu.edu">
     phone number:860-505-5162</a>.</p>
-    </footer>
+      </footer>
                    <nav>
                     <a href="/html/">HTML</a> |
                     <a href="/css/">CSS</a> |
@@ -39,9 +63,9 @@
 <h1>TAKE CARE OF YOUR HEALTH BEFORE ITS TO LATE</h1>
 <img src="https://cdn.pixabay.com/photo/2013/06/29/21/18/wolf-142173_960_720.jpg" alt="wolf" width="775" height="675" border="20">
 
-<!-- make sure that your </body> tag occurs at the very bottom of the file, just above the last line, which should be </html>, so I am commenting it out & adding it to the bottom-->
-<!-- missing the opening <ul> tag, but this represents a good nesting of the list items and the hyperlinks within them. I've added the opener for the unordered list <ul> below: -->
-      <ul>
+</body>
+
+
         <li><a href="css">About Us</a></li>
         <li><a href="JavaScript">Our Clients</a></li>
         <li><a href="jQuery">Contact Us</a></li>
@@ -50,6 +74,7 @@
 
   <p class="a">This is a paragraph, shown in the Times New Roman font.</p>
   <p class="b">This is a paragraph, shown in the Arial font.</p>
+
             <h1 id="myHeader">taking care of your health</h1>
             <button onclick="displayResult()">Change text</button>
 
@@ -75,5 +100,5 @@
                 </div>
 
                               <div id="myID" class="class1 class2 class3">Content</div>
-</body>
+
 </html>
